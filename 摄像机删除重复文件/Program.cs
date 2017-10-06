@@ -6,17 +6,18 @@ using System.Windows.Forms;
 
 namespace 摄像机删除重复文件
 {
-    static class Program
+  public  static class Program
     {
         /// <summary>
         /// 应用程序的主入口点。
         /// </summary>
         [STAThread]
-        static void Main()
+     public   static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Form1 form1 = new Form1();
+            Application.Run(form1);
         }
     }
 }

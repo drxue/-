@@ -35,6 +35,7 @@
             this.btnFind = new System.Windows.Forms.Button();
             this.listBoxFiles = new System.Windows.Forms.ListBox();
             this.listBoxDirectory = new System.Windows.Forms.ListBox();
+            this.btnRename = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnOpen
@@ -102,11 +103,22 @@
             this.listBoxDirectory.Size = new System.Drawing.Size(317, 364);
             this.listBoxDirectory.TabIndex = 7;
             // 
+            // btnRename
+            // 
+            this.btnRename.Location = new System.Drawing.Point(709, 11);
+            this.btnRename.Name = "btnRename";
+            this.btnRename.Size = new System.Drawing.Size(75, 23);
+            this.btnRename.TabIndex = 8;
+            this.btnRename.Text = "文件夹更名";
+            this.btnRename.UseVisualStyleBackColor = true;
+            this.btnRename.Click += new System.EventHandler(this.btnRename_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(955, 413);
+            this.Controls.Add(this.btnRename);
             this.Controls.Add(this.listBoxDirectory);
             this.Controls.Add(this.listBoxFiles);
             this.Controls.Add(this.btnFind);
@@ -130,6 +142,7 @@
         private System.Windows.Forms.Button btnFind;
         private System.Windows.Forms.ListBox listBoxFiles;
         private System.Windows.Forms.ListBox listBoxDirectory;
+        private System.Windows.Forms.Button btnRename;
     }
 }
 

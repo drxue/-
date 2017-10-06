@@ -157,5 +157,14 @@ namespace 摄像机删除重复文件
 
             return result;
         }
+
+        private void btnRename_Click(object sender, EventArgs e)
+        {
+            Rename rename = new Rename();
+            rename.Show();
+            this.Hide();
+            rename.Owner = this;
+            
+        }
     }
 }
